@@ -1,18 +1,21 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js + TypeScript App"/>
+  <Home/>
 </template>
 
 <script lang="ts">
-import { Options, Vue } from 'vue-class-component';
-import HelloWorld from './components/HelloWorld.vue';
+// import {ref, onMounted, watch, onUnmounted } from 'vue';
+// import { Vue } from 'vue-class-component';
+// import { useRoute, useRouter, LocationQueryValue } from 'vue-router';
+import Home from './components/Home.vue';
 
-@Options({
+// const route = useRoute();
+// const router = useRouter();
+
+export default {
   components: {
-    HelloWorld,
+    Home,
   },
-})
-export default class App extends Vue {}
+}
 </script>
 
 <style>
@@ -22,6 +25,8 @@ export default class App extends Vue {}
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+  background-color: #DCDCDC;
+  padding: 60px 0;
+  height: 100%;
 }
 </style>
